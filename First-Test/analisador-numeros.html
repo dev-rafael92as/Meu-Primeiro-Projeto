@@ -14,13 +14,17 @@
   <header>
     <h1>Analisador de Números</h1>
   </header>
-  <section id="container"> 
+  <section id="container">
     <label for="num">Número (entre 1 e 100):</label>
-    <input type="text" placeholder="Digite aqui os números">
-    <input type="button" value="Adicionar"><br>
-    <select name="" id="flista" size="6" ></select><br>
-    <button>Finalizar</button>
+    <input type="text" id="numero" placeholder="Digite aqui os números">
+    <input type="button" onclick="analisarNumero()" value="Adicionar"><br>
+    <select name="" id="flista" size="6"></select><br>
+    <button onclick="finalizarAplicacao()">Finalizar</button><br>
+    <div id="listaResultados">
+    </div>
   </section>
+  
+  <script src="javascript.js"></script>
 </body>
 
 </html>
